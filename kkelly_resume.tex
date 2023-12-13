@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Kevin Kelly
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+%-----------------
+% Header
+%   - Full Name
+%   - Phone Number
+%   - Email
+\newcommand{\resumeHeader}[3]{
+    \begin{center}
+        \textbf{\Huge \scshape #1} \\ \vspace{1pt}
+        \small \faPhone \hspace{0.1cm}#2 $|$ \href{mailto:#3}{\faEnvelope \hspace{0.1cm}#3}}
+
+\newcommand{\resumeHeaderEnd}{
+    \end{center}
+}
+
+%-----------------
+% Link
+%   - Link
+%   - Text
+\newcommand{\resumeLink}[2]{$|$ \href{#1}{#2}}
+
+
+
+%-----------------
+% Section
+%   - Title
+\newcommand{\resumeSection}[1]{
+    \section{#1}
+}
+
+%-----------------
+% Bullet
+%   - Body
+\newcommand{\resumeBullet}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+%-----------------
+% Job
+%   - Title
+%   - Duration
+%   - Employer
+%   - Location
+\newcommand{\resumeJob}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+%-----------------
+% Project
+%   - Title + Skills
+%   - Duration
+\newcommand{\resumeProject}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+%-----------------
+% Education
+%   - Institution
+%   - Location
+%   - Duration
+%   - Certification (Degree)
+\newcommand{\resumeEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeComponentListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeComponentListEnd}{\end{itemize}}
+\newcommand{\resumeBulletListStart}{\begin{itemize}}
+\newcommand{\resumeBulletListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\resumeHeader{Kevin R Kelly}{(267) 644-9370}{kevink\_2022@outlook.com}
+\resumeLink{https://www.linkedin.com/in/kevink2019/}{\faLinkedin \hspace{0.02cm} linkedin.com/in/\textbf{kevink2019}}
+\resumeLink{https://github.com/kevink2022}{\faGithub \hspace{0.02cm} github.com/\textbf{kevink2022}}
+\resumeHeaderEnd
+
+%-----------EDUCATION-----------
+\resumeSection{Education}
+  \resumeComponentListStart
+    
+    \resumeEducation
+      {\href{https://bulletins.psu.edu/undergraduate/colleges/engineering/computer-engineering-bs/}{Pennsylvania State University}}{August 2019 -- December 2022}
+      {Bachelor of Science in Computer Engineering}{University Park, PA}
+      \resumeBulletListStart
+        \resumeBullet{GPA: \textbf{3.85}/4. Dean's List: 6 out of 7 semesters. Graduated \textit{Cum Laude} (Top 12\% in my major).}
+        %\resumeBullet{Progressed from Member to Secretary in IEEE Eta Kappa Nu, the Electrical Engineering and Computer Science Honor Society.}
+      \resumeBulletListEnd
+  
+  \resumeComponentListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\resumeSection{Experience}
+  \resumeComponentListStart
+
+    \resumeJob
+      {\href{https://www.fastenterprises.com/}{FAST Enterprises}}{July 2023 -- Present}
+      {Implementation Consultant}{Sacramento, CA}
+      \resumeBulletListStart
+        \resumeBullet{Effectively communicate with clients to understand their business requests, translating said requests into tailored solutions within the FAST system, adhering to internal best practices.}
+        \resumeBullet{Develop complex \textbf{SQL} queries for specific data requests and system configuration analysis. Enhance production query performance through Execution Plans and SQL statistics analysis.}
+        \resumeBullet{Deliver confident and impactful client demonstrations, along with technical presentations to internal teams, effectively communicating complex technical concepts in a digestible format.}
+        % \resumeBullet{Collaborated with cross-functional teams, coordinating project activities to drive progress.}
+        % \resumeBullet{Utilized advanced Excel calculations to analyze and present large data sets derived from SQL queries.}
+      \resumeBulletListEnd
+
+    \resumeJob
+      {\href{https://www.rtd.com/}{RTD Embedded Technologies, Inc.}}{May 2022 -- August 2022}
+      {Engineering Intern}{University Park, PA}
+      \resumeBulletListStart
+        \resumeBullet{Maintained and updated Legacy \textbf{Linux Kernel Drivers}, adeptly diagnosing issues and analyzing Linux Kernel source code to resolve bugs and implement driver updates.}
+        \resumeBullet{Developed a \textbf{Python} tool for automated driver retrieval and testing, effectively identifying and addressing widespread bugs resulting from Kernel updates.}
+        \resumeBullet{Diligently adhered to the comprehensive document control protocols required by ISO 9001 and AS9100 standards.}
+        \resumeBullet{Successfully ported a legacy ROM DOS manufacturing test to a Python script for Linux, modernizing the testing process.}
+        % \resumeBullet{Revamped internal testing documentation to enhance clarity and reduce ambiguity, ensuring more accurate and efficient testing procedures.}
+        % \resumeBullet{Created a Python tool integrating SQL database querying to automatically retrieve and execute the latest manufacturing tests, triggered by scanning a barcode on the testing line.}
+        % \resumeBullet{Initiated the development of a user-friendly Driver GUI from scratch, enhancing end-user experience and streamlining internal testing processes.}
+    \resumeBulletListEnd
+
+  \resumeComponentListEnd
+
+
+%-----------PROJECTS-----------
+\resumeSection{Projects}
+    \resumeComponentListStart
+
+    \resumeProject
+    {\textbf{\href{https://github.com/kevink2022/Resipi}{Resipi}} $|$ \emph{JavaScript, Markdown, YAML, Obsidian Dataview}}{November 2023 -- Present}
+      \resumeBulletListStart
+        \resumeBullet{Recipe/Ingredient planner, enabling users to efficiently plan meals and minimize food waste. Features include lists of possible recipes based on available ingredients, and identification of missing ingredients for selected recipes.}
+        \resumeBullet{Utilized Obsidian's Dataview plugin, combining \textbf{Markdown} files with \textbf{YAML} Frontmatter for recipe/ingredient data organization, and \textbf{JavaScript} for dynamic querying of possible recipes and missing ingredients.}
+      \resumeBulletListEnd
+
+    \resumeProject
+    {\textbf{\href{https://github.com/kevink2022/ecg-scanner}{ECG Scanner}} $|$ \emph{Swift, SwiftUI, REST API, python, MVVM}}{August 2022 -- December 2022}
+      \resumeBulletListStart
+        \resumeBullet{Collaboratively developed an iOS app for digitizing ECG scans. The app allows users to scan printed ECG pages, which are then digitized and displayed using Swift Charts.}
+        \resumeBullet{Built the front-end interface using \textbf{Swift} and \textbf{SwiftUI}, adhering to \textbf{MVVM} design principles. Integrated a \textbf{Python} backend, hosted on Heroku, through a \textbf{REST API}.}
+        \resumeBullet{Spearheaded debugging efforts, acquiring a comprehensive understanding of both front-end and back-end.}
+      \resumeBulletListEnd
+
+    \resumeProject
+    {\textbf{\href{https://github.com/kevink2022/Boomic}{Boomic Music}} $|$ \emph{Swift, SwiftUI, MVVM}}{November 2022 -- December 2022}
+      \resumeBulletListStart
+        \resumeBullet{iOS music playback app for High resolution FLAC files which aren't natively supported by Apple Music.}
+        \resumeBullet{Built in \textbf{Swift} with \textbf{SwiftUI} and \textbf{MVVM} architecture. Automatically populates the music library through the iOS Files app, allowing for drag and drop. Organizes music into albums and artists based on file metadata and displays album art embedded in the file or located in the same directory.}
+      \resumeBulletListEnd
+
+    \resumeProject
+    {\textbf{\href{https://github.com/kevink2022/channels}{Channels}} $|$ \emph{C, GDB, Valgrind, pthread, semaphores}}{January 2022 -- May 2022}
+      \resumeBulletListStart
+        \resumeBullet{Multi-threaded buffered channel system enabling threads to send or receive data. Includes a 'select' function enabling threads to submit multiple send/receive requests, ensuring that only one request is completed.}
+        \resumeBullet{Implemented in \textbf{C}. Employed linked lists for queue management, \textbf{mutex locks} for thread safety, and \textbf{semaphores} to control access to resources. Utilized \textbf{GDB} and \textbf{Valgrind} for debugging and memory safety.}
+      \resumeBulletListEnd
+
+    \resumeProject
+    {\textbf{\href{https://github.com/kevink2022/raspberry-car/}{Raspberry Pi RC Car}} $|$ \emph{C, SSH, VNC, pthread, semaphores}}{January 2022 -- May 2022}
+      \resumeBulletListStart
+        \resumeBullet{RC car capable of both manual control and autonomous navigation, employing live image processing to follow a laser pointer, as well as track navigation using either image processing and IR proximity sensors. Also features motion data capturing and replay mode.}
+        \resumeBullet{Implemented in \textbf{C}. \textbf{SSH} and \textbf{VNC} used for development and remote control. \textbf{Mutex locks} and \textbf{semaphores} used for thread safety.}
+      \resumeBulletListEnd
+
+    % \resumeProject
+    % {\textbf{Malloc} $|$ \emph{C, GDB, Valgrind, pthread, sempaphores}}{January 2022 -- May 2022}
+    %   \resumeBulletListStart
+    %     \resumeBullet{Implemented a custom version of the standard memory allocation library in C, mirroring functions like malloc(), realloc(), and free().}
+    %     \resumeBullet{Utilized advanced pointer arithmetic and static inline functions. Applied linked lists in free memory blocks to enable efficient allocation.}
+    %   \resumeBulletListEnd
+
+    \resumeComponentListEnd
+
+%-------------------------------------------
+\end{document}
